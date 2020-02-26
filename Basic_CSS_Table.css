@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(201,255,229);
+	color: rgb(0,72,186);
+	text-align: center;
+	font-family: 'Ubuntu';
+}
+table {
+	border: 2px solid silver;
+	
+}
+td:hover {
+	background-color: rgb(255,230,102);
+	color: rgb(211,33,45);
+
+}
+
+	

@@ -1,0 +1,9 @@
+body {
+	background-color: rgb(252,234,217);
+	color: rgb(102,2,60);
+	font-family: 'Playfair Display';
+}
+
+ol {
+	list-style-type: upper-roman;
+}
