@@ -127,15 +127,6 @@ section {
     text-align: center;
 }
 
-.menu-container {
-    max-height: 340px;
-    margin: 0% auto;
-    content: " ";
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-}
-
 /**********************************************
     HOME SECTION STYLES
 **********************************************/
