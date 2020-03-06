@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Andy Schultheiss | Software Developer</title>
+		<link rel="stylesheet" type="text/css" href="./css/portfolio-site.css">
+	</head>
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a href="#Contact">Contact</a>
+	</div>
+
+<!-- Home -->
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+
+<!-- Video -->
+	<div id="Home">
+		<video autoplay muted loop class="Background_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="./video/Keyboard.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Andy Schultheiss</h1>
+		<h2 style="color:white;">Software Developer</h2>
+			<p> 
+				<strong>
+					<center>
+						<q> For a long time it puzzled me how something so expensive, so leading edge, could be so useless. 
+						<br> And then it occurred to me that a computer is a stupid machine with the ability to do incredibly smart things, 
+						<br> while computer programmers are smart people with the ability to do incredibly stupid things. 
+						<br> They are, in short, a perfect match.
+						</q>	
+						<br> - Bill Bryson <br>
+						<br> Welcome to my portfolio website. Please take a moment to read about my background and experience.<br>
+						<br> Thank you for stopping by and enjoy! 
+					</center>	
+				</strong>
+			</p> 
+	</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="./images/coding-glasses.jpg" alt="Screen of code behind glasses">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h2>About Me</h2>
+				<p>I'm a Portland, Oregon-based full-stack software developer with a passion for coding and lifelong learning. My interests include coffee, cycling, and crossword puzzles.<br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python, and more. <br><br>I love new projects and opportunities to learn. <a href="#Contact">Contact</a> me below with any questions or if you think I could help with your next project!</p>
+		</div>
+	</div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h2>GitHub</h2>
+				<p>You can view my coding projects on my GitHub profile here:<br>
+				<center><a href="https://github.com/andyeschultheiss" target="_blank">My GitHub Page</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/andyeschultheiss" target="_blank"><img src="./images/Octocat.png" alt="GitHub Octocat"></a>
+		</div>
+	</div>
+
+<!-- Contact section -->
+	<div class="Row" id="Contact"> 
+		<div class="Column_3"> <!-- Contact image on left -->
+			<img src="./images/close-up-computer.jpg" alt="Workspace with laptop">
+		</div>
+	
+		<div class="Column_1"> <!-- Contact form on right -->
+			
+			<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+				<h2>Contact</h2> 
+				<label>Name:</label><br>
+					<input type="text" placeholder="Please enter your name here"><br>
+				<label>Email:</label><br>
+					<input type="text" id="Email" name="Email" placeholder="Please enter your email here"><br>
+				<label>Message:</label><br>
+					<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+					<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	
+<!-- Footer section -->
+	<footer>
+		<p>
+			<center>&copy; 2020 | <a href="mailto:andy.e.schultheiss@gmail.com">Andy Schultheiss</a></center><br>
+		</p>
+	</footer>
+
+</body>
+
+</html>

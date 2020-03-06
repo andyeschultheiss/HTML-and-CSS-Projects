@@ -1,0 +1,218 @@
+/* Body */
+body {
+	margin: 0%;
+}
+
+/* Navbar */
+.Navbar {
+	overflow: hidden;
+	background-color: #1b262c;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1; /* Keep atop other elements */
+}
+
+/* Navbar text */
+.Navbar a {
+	float: left;
+	display: block;
+	color: #ffffaf;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Navbar hover effect */
+.Navbar a:hover {
+	background-color: #0f4c81;
+	color: #ff8c4e; 
+}
+
+/* Navbar home button */
+.Navbar a.active {
+  background-color: #0f4c81;
+}
+
+/* Background Video */
+.Background_Video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	z-index: -1; /* Keep underneath other elements */
+}
+
+/* Text over the video */ 
+.Video_Text { 
+	background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+	color: rgb(255,255,255); 
+	width: 100%;
+	padding: 20px;
+	margin-top: 20%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.Column_1 {
+	float: left;  
+	width: 50%; /* This ensures one column takes up half the page width */
+	padding: 2%; 
+	padding-top: 1%;
+	height: 400px;
+	background-color: #dfad84; 
+}
+
+.Column_2 {
+	float: left;
+	width: 50%;
+	padding: 2%;
+	padding-top: 2%;
+	height: 400px;
+	background-color: #253e4e;
+}
+
+.Column_3 {
+	float: left;
+	width: 50%;
+	padding: 2%;
+	padding-top: 2%;
+	height: 400px;
+	background-color: #253e4e;
+}
+
+.Row:after {
+	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table;
+	clear: both; /* This clears any other elements from floating to the left or right of an element */
+}
+
+/* Heading 1, 2, & 3 elements */
+h1, h2, h3 {
+	font-family: "Trebuchet MS";
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-top: 1%;
+	color: #1a1a1a;
+}
+
+/* Paragraph elements */
+p {
+	font-family: 'Open Sans';
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Center align elements - this embraces all centered text */
+center {
+	font-family: Perpetua;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Center align element hover effect */
+center:hover {
+	transition: transform 2s;
+	transform: scale(1.05);
+}
+
+/* Anchor elements */
+a {
+	color: blue;
+}
+
+/* Quotation elements */
+q {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Image elements */
+img {
+	filter: grayscale(75%); /* Render colors muted initially */
+    border-radius: 8px;
+    max-width: 100%; 
+    height: 340px; 
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
+
+/* Image element hover effects */
+img:hover {
+	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+    transition: transform 1s;
+	transform: scale(1.05);  /* Scale up image slightly when hovered */
+}
+
+/* Video effects */
+video {
+	filter: grayscale(25%); /* Mute video colors slightly */
+}
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 90%;
+	padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	font-family: Perpetua; 
+	font-size: 1em;
+	text-align: center;
+}
+
+/* Submit button */
+input[type=submit] { /* This covers the submit button for the contact form */
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: Perpetua;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+	background-color: white; /* Makes the background turn white when hovered over */
+	color: black; /* Makes the font turn black when hovered over */
+	font-weight: bold; /* Makes the font bold when hovered over */
+	transform: scale(1.2); /* Makes the button increase 20% in size */ 
+	transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
+
+/* Form elememt */
+form { 
+	border-radius: 5px; 
+	background-color: #e4e4e4;
+	padding: 12px;
+	font-family: "Trebuchet MS";
+	max-height: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+
+/* Footer element */
+footer {
+	padding: 2%;
+	background-color: white;
+}
