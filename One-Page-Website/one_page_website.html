@@ -2,6 +2,9 @@
 <html lang = "en">
 	<head>
 		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A brief introduction to an automotive classic, the Citroen DS">
+        <meta name="author" content="Andy Schultheiss">
 		<link rel = "stylesheet" type = "text/css" href = "./css/one_page_website.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 		<title>&#171;The Citro&#235;n DS&#187;</title>
@@ -27,14 +30,14 @@
 			<p>&nbsp;&nbsp;This page is devoted to the worship of the goddess, or d&#233;esse in French. It is no coincidence that the automaker Citro&#235;n chose DS as the name
 			of this masterwork of automotive inspiration. From its bold space-age design to its breakthrough technology, the DS embodied all that was hopeful and aspirational
 			about an era of history.<br><br>
-			&nbsp;&nbsp;The DS debuted in 1955 to much fanfare, although its design had been carried out over many years, and in fact the plans hidden from the Axis during the war.
+			&nbsp;&nbsp;The DS debuted in 1955 to much fanfare, although its design had been carried out over many years, and in fact the plans were hidden from the Axis during the war.
 			And what design it had to offer; its low-slung appearance was aerodynamic and modern, every detail was thoughtfully placed. The rear turn indicators were positioned at 
-			the roofline in "trumpets" of chrome to ensure visibility due its low, lean stature.<br><br>
+			the roofline in "trumpets" of chrome to ensure visibility due to its low, lean stature.<br><br>
 			&nbsp;&nbsp;But the crowning achievement, and enduring legacy of the DS, is its innovative hydropneumatic suspension. Typical automotive suspensions must exchange ride 
-			quality and suppleness for crisp handling, but Paul Mages knew an alternative path had to exist. After years of development, Citro&#235;n debuted its solution: a system
+			quality and suppleness for crisp handling, but lead engineer Paul Mages knew an alternative path had to exist. After years of development, Citro&#235;n debuted its solution: a system
 			of hydraulic fluid, kept pressurized by an engine-driven pump, filled 4 spheres at the crown of each suspension attachment point, one above each wheel. Disturbances, in 
-			the form of bumps, displaced this fluid, which in turn compressed air at the top of each sphere. Such a novel system allowed for compliance to small, brief displacement 
-			and rigidity in the face of sustained compression, such as encountered in a sweeping turn at speed.<br><br>
+			the form of bumps, displaced this fluid, which in turn compressed air at the top of each sphere. Such a novel system allowed for compliance to small, brief displacement in the form of
+			road harshness, while supplying rigidity in the face of sustained compression, such as encountered in a sweeping turn at speed.<br><br>
 		</div>
 		
 		<!--END HOME-->
@@ -46,28 +49,96 @@
 
 				<!--PHOTO CONTAINER 1-->						
 				<div style="width:100%; height:400px;">
-					 <img src="./images/Pea_Soup_DS.jpg" alt="Front 3/4 view" style="float:left; width:50%; height:100%; object-fit:contain;">
-					 <img src="./images/Vangelis-1974-Citroen-DS.jpg" alt="Rear view with open doors" style="float:left; width:50%; height:100%; object-fit:contain;">
+					 <img src="./images/Pea_Soup_DS.jpg" alt="Front 3/4 view" style="float:left; width:50%; height:100%; object-fit:contain;" onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
+					 <img src="./images/Vangelis-1974-Citroen-DS.jpg" alt="Rear view with open doors" style="float:left; width:50%; height:100%; object-fit:contain;" onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
 				</div>
 				<!--END PHOTO CONTAINER 1-->	
 				<br>
 				<!-- PHOTO CONTAINER 2 -->						
 				<div style="width:100%; height:400px;">
-					 <img src="./images/citroen_ds_21_pallas_6.jpg" alt="Underhood view with spare" style="float:left; width:50%; height:100%; object-fit:contain;">
-					 <img src="./images/ds-pallas.jpg" alt="Rear 3/4 view" style="float:left; width:50%; height:100%; object-fit:contain;">
+					 <img src="./images/citroen_ds_21_pallas_6.jpg" alt="Underhood view with spare" style="float:left; width:50%; height:100%; object-fit:contain;" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+					 <img src="./images/ds-pallas.jpg" alt="Rear 3/4 view" style="float:left; width:50%; height:100%; object-fit:contain;"onclick="openModal(); currentSlide(4)" class="hover-shadow cursor">
 				</div>
 				<!-- END PHOTO CONTAINER 2 -->
 				<br>
 				<!--PHOTO CONTAINER 3-->						
 				<div style="width:100%; height:400px;">
-					 <img src="./images/Citroen-DS-Interior-Picture.jpg" alt="Interior driver's side" style="float:left; width:50%; height:100%; object-fit:contain;">
-					 <img src="./images/Citroen-DS-gear-patrol.jpg" alt="Frontal view in motion" style="float:left; width:50%; height:100%; object-fit:contain;">
+					 <img src="./images/Citroen-DS-Interior-Picture.jpg" alt="Interior driver's side" style="float:left; width:50%; height:100%; object-fit:contain;" onclick="openModal(); currentSlide(5)" class="hover-shadow cursor">
+					 <img src="./images/Citroen-DS-gear-patrol.jpg" alt="Frontal view in motion" style="float:left; width:50%; height:100%; object-fit:contain;" onclick="openModal(); currentSlide(6)" class="hover-shadow cursor">
 				</div>
 				<!-- END PHOTO CONTAINER 3 -->
 		
 		
 			</div>
 		</section>
+
+		<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="./images/Pea_Soup_DS.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="./images/Vangelis-1974-Citroen-DS.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="./images/citroen_ds_21_pallas_6.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="./images/ds-pallas.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="./images/Citroen-DS-Interior-Picture.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="./images/Citroen-DS-gear-patrol.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="caption-container">
+			<p id="caption"></p>
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/Pea_Soup_DS.jpg" style="width:100%" onclick="currentSlide(1)" alt="Front 3/4 view">
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/Vangelis-1974-Citroen-DS.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rear view with open doors">
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/citroen_ds_21_pallas_6.jpg" alt="Underhood view with spare" style="width:100%" onclick="currentSlide(3)">
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/ds-pallas.jpg" alt="Rear 3/4 view" style="width:100%" onclick="currentSlide(4)">
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/Citroen-DS-Interior-Picture.jpg" alt="Interior driver's side" style="width:100%" onclick="currentSlide(5)">
+			</div>
+
+			<div class="column">
+			<img class="thumb cursor" src="./images/Citroen-DS-gear-patrol.jpg" alt="Frontal view in motion" style="width:100%" onclick="currentSlide(6)">
+			</div>
+			
+		</div>
+		</div>
 		<!--END GALLERY-->
 		
 		<!--VIDEO-->
@@ -105,8 +176,10 @@
 			</div>
 			<br>
 		</section>
-		<!-- CONTACT -->
-		
+		<!-- END CONTACT -->
+
+	<script src="./js/one_page_website_JS.js"></script>
+
 	</body>
 	
 	<!-- FOOTER -->
